@@ -21,6 +21,11 @@
 - [Bring me to the previews!](#previews)
 - [Contributors](#contributors)
 
+## Notice
+I clone the total kitty-themes from [dexpota](https://github.com/dexpota/kitty-themes.git), and then add other [themes](https://github.com/folke/tokyonight.nvim/tree/main/extras/kitty) 
+by myself.
+
+
 ## About
 
 In this repository you can find a set of themes to personalize your kitty
@@ -35,11 +40,11 @@ the previews for each theme in the [section](#previews) below or in this other
 1. If you want to download and use one of these theme you have two options:
     - clone the entire *kitty-themes* repository:
       ```bash
-      git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
+      git clone --depth 1 https://github.com/elmerceng/kitty-themes.git ~/.config/kitty/kitty-themes
       ```
    - or download just one theme:
       ```bash
-      THEME=https://raw.githubusercontent.com/dexpota/kitty-themes/master/themes/3024_Day.conf
+      THEME=https://raw.githubusercontent.com/elmerceng/kitty-themes/master/themes/3024_Day.conf
       wget "$THEME" -P ~/.config/kitty/kitty-themes/themes
       ```
 
@@ -100,7 +105,14 @@ one-liner (requires `jq`):
 COLOR_SCRIPT_REPO=https://api.github.com/repos/stark/Color-Scripts/contents/color-scripts
 wget -q -O - $(curl -s $COLOR_SCRIPT_REPO | jq '.[] | "\(.path) \(.download_url)"' -r | shuf -n1 | cut -d " " -f2) | bash
 ```
-
+### Tokyonight Day
+![image](https://user-images.githubusercontent.com/292349/115996270-78c6c480-a593-11eb-8ed0-7d1400b058f5.png)
+### Tokyonight Night
+![image](https://user-images.githubusercontent.com/292349/115295327-7afdce80-a10e-11eb-89b3-2591262bf95a.png)
+### Tokyonight Moon
+![image](https://user-images.githubusercontent.com/292349/190951628-10ba28a1-57ff-4479-8eab-47400a402242.png)
+### Tokyonight Storm
+![image](https://user-images.githubusercontent.com/292349/115295095-3a9e5080-a10e-11eb-9aed-6054488c46ce.png)
 ### 3024 Day
 ![image](https://raw.githubusercontent.com/dexpota/kitty-themes-website/master/previews/3024_Day/preview.png)
 ### 3024 Night
